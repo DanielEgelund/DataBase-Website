@@ -9,8 +9,9 @@ body {
 
 header{
     grid-column: 1 / 4;
+    grid-row: 1;
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-columns: 200px 1fr;
     background: url(Images/headerbg.png);
     background-size: cover;
@@ -19,14 +20,23 @@ header{
 #logo {
     color: white;
     font-weight: bold;
-    font-size: 46px;
+    font-size: 36px;
     margin-left: 80px;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+#topBar{
+    position: sticky;
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.9);
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 60px;
 }
 
 nav{
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: -65px;
 }
 
 nav a{
@@ -36,6 +46,10 @@ nav a{
     font-size: 16px;
     float: right;
     text-decoration: none;
+}
+
+nav a:hover { 
+    color: #c9c9c9;
 }
 
 .introText {
@@ -61,6 +75,10 @@ nav a{
     font-weight: bold;
 	cursor: pointer;
     padding: 15px 40px 15px 40px;
+}
+
+.button:hover{
+    background-color: #e0d463;
 }
 
 .gruppe {
@@ -153,8 +171,42 @@ nav a{
 }
 
 footer {
-
-    background-color: #5E5E5E;
+    display: grid;
+    background-color: #434343;
     grid-column: 1 / 4;
     grid-row: 5;
+}
+
+#footerlogo{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+}
+
+#linkSection{
+    margin-top: 15px;
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 150px 200px 150px;
+    justify-content: right;
+    line-height: 25px;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+#copyright{
+    grid-column: 1 / 5;
+    display: inline-grid;
+    color: white;
+    margin-top: -8px;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 11px;
 }
