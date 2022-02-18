@@ -1,0 +1,160 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1020px auto;
+    grid-template-rows: 600px 620px 260px 550px 140px;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+header{
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 200px 1fr;
+    background: url(Images/headerbg.png);
+    background-size: cover;
+}
+
+#logo {
+    color: white;
+    font-weight: bold;
+    font-size: 46px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+nav{
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+nav a{
+    padding-right: 23px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    float: right;
+    text-decoration: none;
+}
+
+.introText {
+    color: white;
+    width: 535px;
+    height: 600px;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-top: 140px;
+}
+
+.introText h1{
+    font-size: 38px;
+}
+
+.introText p{
+    margin-bottom: 90px;
+}
+
+.button{
+    background-color: #FFF173;
+	color: black;
+    font-weight: bold;
+	cursor: pointer;
+    padding: 15px 40px 15px 40px;
+}
+
+.gruppe {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.overskrift {
+    font-size: 38px;
+}
+
+.gruppe article {
+    display: inline-grid;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.gruppe img{
+    margin-top: 30px;
+    width: 200px;
+}
+
+.gruppe article h1 {
+    font-size: 30px;
+}
+
+.gruppe p {
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+    margin-top: -20px;
+}
+
+.repo{
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: #7246AA;
+    
+}
+
+.repo h1{
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 420px;
+    margin-bottom: 70px;
+}
+
+.repo .button {
+    margin-left: 420px;
+}
+
+#github {
+    width: 300px;
+    filter: invert();
+    float: right;
+    margin-top: -120px;
+    margin-right: 440px;
+}
+
+.content{
+    grid-column: 1 / 4;
+    grid-row: 4;
+}
+
+#abstract {
+    display: inline-grid;
+    width: 400px;
+    margin-left: 420px;
+    margin-top: 140px;
+    float: left;
+}
+
+.content article{
+    display: inline-grid;
+    width: 490px;
+    margin-left: 40px;
+}
+
+.content h1{
+    font-size: 20px;
+    margin-top: 140px;
+}
+
+.content p{
+    font-size: 18px;
+}
+
+footer {
+
+    background-color: #5E5E5E;
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
