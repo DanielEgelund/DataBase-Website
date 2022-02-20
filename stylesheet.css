@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     display: grid;
     grid-template-columns: auto 1020px auto;
@@ -48,6 +52,7 @@ nav a{
     text-decoration: none;
 }
 
+
 nav a:hover { 
     color: #c9c9c9;
 }
@@ -58,7 +63,7 @@ nav a:hover {
     height: 600px;
     font-weight: bold;
     margin-left: 300px;
-    margin-top: 140px;
+    margin-top: 220px;
 }
 
 .introText h1{
@@ -119,7 +124,6 @@ nav a:hover {
     grid-row: 3;
     grid-column: 1 / 4;
     background-color: #7246AA;
-    
 }
 
 .repo h1{
