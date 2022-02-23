@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stored Procedures</title>
+        <link rel="stylesheet" href="StoredProcedues.css">
+    </head>
+    <body>
+            <div id="topBar">
+            <p id="logo">PBI</p>
+            <nav>
+                <a href="XML.html">XML</a>
+                <a href="Transactions.html">TRANSACTIONS</a>
+                <a href="Triggers.html">TRIGGERS</a>
+                <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                <a href="Administration.html">ADMINISTRATION</a>
+                <a href="Normalization.html">NORMALIZATION</a>
+                <a href="index.html">FORSIDE</a>
+            </nav>
+            </div>
+        <header>
+                <h1 id="overskrift">STORED PROCEDURES</h1>
+        </header>
+        <section class="contSections" id="sec1">
+            <img src="./Images/GetAmount.png" id="GetAmount">
+            <h1>SUM OF AN ORDER</h1>
+            <p>
+                - Først og fremmest bruges en ”Stored procedure”, for hurtigere at kunne eksekvere statements, da de bliver precompiled på serveren. Derudover bidrager stored procedures til data-sikkerhed, da der, lige som ved privilegierne, kan gives rettigheder til den enkelte bruger.
+                <br><br>
+                - I opgaven skal en stored procedure afregne summen af en ordre. Dette gøres ved at benytte sig af den korrekt syntaks, som indledningsvist starter med ”Create procedure”, hertil det pågældende tabelnavn, og dernæst de værdier man ønsker at få den samlede sum af. 
+
+            </p>
+        </section>
+        <section class="contSections" id="sec2">
+            <h1>LOW STOCK CHECK</h1>
+            <p>
+                Denne stored procedure, bidrager til at vi i det givne datasæt, får en meddelelse hver gang en af vores produkter understiger 5 i den samlede lagerbeholdning. 
+                <br><br>
+                Proceduren oprettes ved at tage udgangspunkt i vores ”Products”- tabel og sørger for at brugerne og databasedesigneren, bliver gjort opmærksomme på at det er på tide at bestille produktet hjem igen.
+                <br><br>
+                Proceduren viser her, hvordan vi har refereret til de korrekte værdier, samt hvilken syntaks der gør det muligt at sende meddelelsen. 
+            </p>
+            <img src="./Images/lowStock.png" id="lowStock">
+        </section>
+        <section id="nextPage">
+            <p>Fortsæt til næste emne:</p>
+            <a class="button" href="Triggers.html">TRIGGERS &#8594;</a>
+        </section>
+        <footer>
+            <p id="footerlogo">PBI</p>
+            <section id="linkSection">
+                <ul id="l1">
+                    <a href="index.html">FORSIDE</a>
+                    <a href="Normalization.html">NORMALIZATION</a>
+                    <a href="Administration.html">ADMINISTRATION</a>
+                </ul>
+                <ul id="l2">
+                    <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                    <a href="Triggers.html">TRIGGERS</a>
+                    <a href="Transactions.html">TRANSACTIONS</a>
+                </ul>
+                <ul id="l3">
+                    <a href="XML.html">XML</a></a>
+                </ul>
+            </section>
+            <p id="copyright"> Copyright © 2022 - Daniel Egelund</p>
+        </footer>
+    </body>
+</html>

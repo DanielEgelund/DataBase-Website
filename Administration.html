@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Administration</title>
+        <link rel="stylesheet" href="Administration.css">
+    </head>
+    <body>
+            <div id="topBar">
+            <p id="logo">PBI</p>
+            <nav>
+                <a href="XML.html">XML</a>
+                <a href="Transactions.html">TRANSACTIONS</a>
+                <a href="Triggers.html">TRIGGERS</a>
+                <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                <a href="Administration.html">ADMINISTRATION</a>
+                <a href="Normalization.html">NORMALIZATION</a>
+                <a href="index.html">FORSIDE</a>
+            </nav>
+            </div>
+        <header>
+                <h1 id="overskrift">ADMINISTRATION</h1>
+        </header>
+        <section class="contSections" id="sec1">
+            <img src="./Images/userPriv.png" id="userPriv">
+            <h1>USER CREATION & PRIVILEGES</h1>
+            <p>
+                - Formålet med at uddele privilegier i SQL er at fortælle databasen hvem der kan se den, samt lave ændringer. Databaseobjekterne kan altså kun ændres, slettes eller opdateres af brugere med rettigheder. 
+                <br><br>
+                - Først og fremmest skal der i databasen oprettes brugere, der kan tildeles disse privilegier.
+            </p>
+        </section>
+        <section class="contSections" id="sec2">
+            <h1>USER IMPLEMENTATION</h1>
+            <p>
+                - I opgaven fremgår det at 3 brugere skal oprettes i databasen, to med mange privilegier og en restriktiv bruger. 
+                <br><br>
+                - De tre brugere hedder henholdsvis Harald, Kurt og Abelone. To af dem kan manipulere data i form af insert, update og delete, hvorimod den sidste kun har ”select”-rettigheder og altså kun kan læse indholdet af databasen. 
+                <br><br>
+                - Af scriptet bag, vises syntaksen til at uddele privilegierne, samt hvordan brugerne oprettes i databasen.
+            </p>
+            <img src="./Images/userImp.png" id="userImp">
+        </section>
+        <section id="nextPage">
+            <p>Fortsæt til næste emne:</p>
+            <a class="button" href="StoredProcedues.html">STORED PROCEDURES &#8594;</a>
+        </section>
+        <footer>
+            <p id="footerlogo">PBI</p>
+            <section id="linkSection">
+                <ul id="l1">
+                    <a href="index.html">FORSIDE</a>
+                    <a href="Normalization.html">NORMALIZATION</a>
+                    <a href="Administration.html">ADMINISTRATION</a>
+                </ul>
+                <ul id="l2">
+                    <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                    <a href="Triggers.html">TRIGGERS</a>
+                    <a href="Transactions.html">TRANSACTIONS</a>
+                </ul>
+                <ul id="l3">
+                    <a href="XML.html">XML</a></a>
+                </ul>
+            </section>
+            <p id="copyright"> Copyright © 2022 - Daniel Egelund</p>
+        </footer>
+    </body>
+</html>

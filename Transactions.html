@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transactions</title>
+        <link rel="stylesheet" href="Transactions.css">
+    </head>
+    <body>
+            <div id="topBar">
+            <p id="logo">PBI</p>
+            <nav>
+                <a href="XML.html">XML</a>
+                <a href="Transactions.html">TRANSACTIONS</a>
+                <a href="Triggers.html">TRIGGERS</a>
+                <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                <a href="Administration.html">ADMINISTRATION</a>
+                <a href="Normalization.html">NORMALIZATION</a>
+                <a href="index.html">FORSIDE</a>
+            </nav>
+            </div>
+        <header>
+                <h1 id="overskrift">TRANSACTIONS</h1>
+        </header>
+        <section class="contSections" id="sec1">
+            <img src="./Images/transaction1.png" id="transaction1">
+            <h1>TRANSACTIONS</h1>
+            <p>
+                En transaction er en entity, som enten skal eller ikke skal eksekveres. Det kan være:
+                - En gruppe af SQL-statements
+                - En kombination af statements og ”stored-procedure call”
+                <br><br>
+                Hvad kan en transaction?
+	            - Tilbagerulle evt. fejl så en database kan opretholde sin korrekthed. Således bliver dele af et eksekveret statement ikke gemt i databasen.
+
+            </p>
+        </section>
+        <section class="contSections" id="sec2">
+            <h1>OVERBLIK OVER ÆNDRINGER</h1>
+            <p>
+                - Formålet med transaction i vores opgave, er ganske enkelt at sørge for, at nye ordrer ikke tilføjes til serveren, hvis transaktionen ikke gennemføres. 
+                <br><br>
+                - Såfremt det derimod virker, tilføjes eller ændres den pågældende data permanent i databasen.  
+            </p>
+            <img src="./Images/transaction2.png" id="transaction2">
+        </section>
+        <section id="nextPage">
+            <p>Fortsæt til næste emne:</p>
+            <a class="button" href="XML.html">XML &#8594;</a>
+        </section>
+        <footer>
+            <p id="footerlogo">PBI</p>
+            <section id="linkSection">
+                <ul id="l1">
+                    <a href="index.html">FORSIDE</a>
+                    <a href="Normalization.html">NORMALIZATION</a>
+                    <a href="Administration.html">ADMINISTRATION</a>
+                </ul>
+                <ul id="l2">
+                    <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                    <a href="Triggers.html">TRIGGERS</a>
+                    <a href="Transactions.html">TRANSACTIONS</a>
+                </ul>
+                <ul id="l3">
+                    <a href="XML.html">XML</a></a>
+                </ul>
+            </section>
+            <p id="copyright"> Copyright © 2022 - Daniel Egelund</p>
+        </footer>
+    </body>
+</html>

@@ -3,48 +3,79 @@
     <head>
         <meta charset="utf-8">
         <title>Forside</title>
-        <link rel="stylesheet" href="ContentPage.css">
+        <link rel="stylesheet" href="Normalization.css">
     </head>
     <body>
             <div id="topBar">
             <p id="logo">PBI</p>
                 <nav>
-                    <a href="#">XML</a>
-                    <a href="#">TRANSACTIONS</a>
-                    <a href="#">TRIGGERS</a>
-                    <a href="#">STORED PROCEDURES</a>
-                    <a href="#">ADMINISTRATION</a>
-                    <a href="#">VIEWS</a>
+                    <a href="XML.html">XML</a>
+                    <a href="Transactions.html">TRANSACTIONS</a>
+                    <a href="Triggers.html">TRIGGERS</a>
+                    <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                    <a href="Administration.html">ADMINISTRATION</a>
                     <a href="Normalization.html">NORMALIZATION</a>
+                    <a href="index.html">FORSIDE</a>
                 </nav>
             </div>
         <header>
                 <h1 id="overskrift">NORMALIZATION</h1>
         </header>
-        <section class="contSections">
+        <section class="contSections" id="sec1">
             <h1>1. NORMAL FORM</h1>
-            <p>Suspendisse aliquam justo a mollis iaculis. Curabitur egestas odio non metus efficitur, quis efficitur neque euismod. Nunc nisl erat, ornare cursus pharetra ut, posuere in ante. Aliquam erat volutpat. Pellentesque magna lectus, suscipit eget elementum nec, pulvinar eu ligula.<br> Nunc volutpat, dui blandit maximus dictum, est dui blandit velit, sit amet fringilla quam nibh ultricies est. Sed condimentum suscipit elit, quis lacinia nibh vehicula non. Morbi ultrices pulvinar velit ut congue.<br> Curabitur sed ultrices mi. Curabitur fringilla elit sit amet turpis auctor, et vulputate quam consequat. Phasellus sit amet blandit lectus. Vivamus in rutrum odio. Praesent in mi ac dolor blandit viverra. Aenean sodales dolor pharetra vehicula convallis. Cras sit amet pretium purus. Maecenas et felis id massa posuere rutrum quis id felis.</p>
-            <img  id="NF1" src="./Images/1NF.jpg">
+            <p>- Ingen kolonner må gentage en anden kolonnes værdi.<br><br>
+                - Atomare værdier.<br><br>
+                - Hvis en tabel har ens attributter af felter inden for samme primærnøgle (vare 1, vare 2, vare 3), så skal denne gruppe af felter fjernes fra tabellen og lægges over i en ny tabel sammen med en kopi af primærnøglen. (Kig på eksemplet i bunden at artiklen).
+            </p>
+            <img src="./Images/1NF.png" id="NF1">
         </section>
-        <section class="sections" id="sec2"></section>
-        <section id="sec3"></section>
-        <section id="sec4"></section>
-        <section id="sec5"></section>
+        <section class="contSections" id="sec2">
+            <h1>2. NORMAL FORM</h1>
+            <p>
+                - Tabellen skal opfylde alle krav for 1. normalform.<br><br>
+                - Hvis en tabel har en sammensat nøgle skal alle felter, der ikke indgår i nøglen, afhænge af den samlede nøgle.<br><br>
+                - Alle non-prime attributter skal være fuldt funktionelt afhængige af primær nøglen. (dvs. ingen partiel funktionel afhængighed).<br><br>
+                - Hvis der kun findes en enkelt primær nøgle er tabellen allerede i 2. normalform, hvis der derimod er en sammensat primærnøgle, kan den stadig bringes til 2. normalform, ved at splitte tabellen op i separate tabeller.
+            </p>
+            <img src="./Images/2NF.png" id="NF2">
+        </section>
+        <section class="contSections" id="sec3">
+            <h1>3. NORMAL FORM</h1>
+            <p>
+                - I third normal form (3NF) er kravet at datasættet optræder i 2NF, og at der ikke forekommer noget transitive dependency, derfor skal det afskaffes. Det gøres ved at vi udfolder vores tabeller yderligere:
+            </p>
+            <img src="./Images/3NF.png" id="NF3">
+        </section>
+        <section id="sec4">
+            <h1>BOYCE CODD NORMAL FORM</h1>
+            <p>
+                Tabellen skal opfylde alle krav for 1. normalform. (Hvis BCNF er opfyldt, opfylder den automatisk 2. og 3. normalform).
+                <br><br>
+                I alle funktionelle afhængigheder A => B skal A være kandidat nøgle
+
+
+            </p>
+            <img src="./Images/BCNF.png" id="BCNF">
+        </section>
+        <section id="nextPage">
+            <p>Fortsæt til næste emne:</p>
+            <a class="button" href="Administration.html">ADMINISTRATION &#8594;</a>
+        </section>
         <footer>
             <p id="footerlogo">PBI</p>
             <section id="linkSection">
                 <ul id="l1">
-                    <a href="#">NORMALIZATION</a>
-                    <a href="#">VIEWS</a>
-                    <a href="#">ADMINISTRATION</a>
+                    <a href="index.html">FORSIDE</a>
+                    <a href="Normalization.html">NORMALIZATION</a>
+                    <a href="Administration.html">ADMINISTRATION</a>
                 </ul>
                 <ul id="l2">
-                    <a href="#">STORED PROCEDURES</a>
-                    <a href="#">TRIGGERS</a>
-                    <a href="#">TRANSACTIONS</a>
+                    <a href="StoredProcedues.html">STORED PROCEDURES</a>
+                    <a href="Triggers.html">TRIGGERS</a>
+                    <a href="Transactions.html">TRANSACTIONS</a>
                 </ul>
                 <ul id="l3">
-                    <a href="#">XML</a></a>
+                    <a href="XML.html">XML</a></a>
                 </ul>
             </section>
             <p id="copyright"> Copyright © 2022 - Daniel Egelund</p>
